@@ -1,11 +1,11 @@
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const extractCSS = new ExtractTextPlugin('[name].bundle.css');
+const extractCSS = new ExtractTextPlugin('assets/styles/[name].bundle.css');
 
 const extractCommons = new webpack.optimize.CommonsChunkPlugin({
     name: 'commons',
-    filename: 'commons.js'
+    filename: 'assets/js/commons.js'
 });
 
 const config = {
@@ -16,7 +16,7 @@ const config = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].bundle.js'
+        filename: 'assets/js/[name].bundle.js'
     },
     module: {
         rules: [
@@ -39,9 +39,29 @@ const config = {
             {
                 test: /\.(png|jpg)$/,
                 use: [{
-                    loader: 'url-loader',
-                    options: { limit: 10000 } // Convert images < 10k to base64 strings
+                    loader: 'file-loader?name=assets/images/[name].[ext]'
                 }]
+            },
+            {
+                test: /\.html$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]'
+                        }
+                    },
+                    {
+                        loader: 'extract-loader',
+                    },
+                    {
+                        loader: 'html-loader',
+                        options: {
+                            interpolate: true,
+                            attrs: ['img:src']
+                        }
+                    }
+                ]
             }
 
         ]
