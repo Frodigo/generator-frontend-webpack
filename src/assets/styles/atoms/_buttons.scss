@@ -1,0 +1,56 @@
+.action {
+    border-radius: $action-default-border-radius;
+    border: 2px solid;
+    color: $action-default-color;
+    display: inline-block;
+    font-weight: $action-default-font-weight;
+    padding: $indent-base $indent-xl;
+    text-decoration: none;
+    transition: all .3s;
+
+    &.primary {
+        border-color: $action-primary-border;
+        background-color: $action-primary-bg;
+        color: $action-primary-color;
+    }
+
+    &.secondary {
+        border-color: $action-secondary-border;
+        background-color: $action-secondary-bg;
+        color: $action-secondary-color;
+    }
+
+    &.primary,
+    &.secondary {
+        &:hover,
+        &:focus {
+            background-color: $action-default-hover-bg;
+            color: $action-default-hover-color;
+            border-color: $action-default-hover-border;
+        }
+    }
+}
+
+button {
+    cursor: pointer;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.btn-burger {
+    background: transparent;
+    border: 0;
+    padding: 0;
+
+    span {
+        @include burger(25px, 4px, 5px, $color-primary);
+    }
+
+    &.is-active {
+        span {
+            @include burger-to-cross;
+        }
+    }
+}

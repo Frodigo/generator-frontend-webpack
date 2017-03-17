@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,400i,600,700');
+
+.ui-title {
+    font-weight: 700;
+    font-size: $font-size-xxl;
+    color: $color-dark;
+    letter-spacing: 1.37px;
+    text-transform: uppercase;
+}
+
+%heading-base {
+    font-weight: 700;
+    color: $color-primary;
+    line-height: 32px;
+}
+
+h1,
+%h1 {
+    @extend %heading-base;
+
+    font-size: 24px;
+    margin: $indent-l 0;
+    line-height: 32px;
+}
+
+h2,
+%h2 {
+    @extend %heading-base;
+
+    font-size: 22px;
+    margin: $indent-l 0;
+    line-height: 28px;
+}
+
+h3,
+%h3 {
+    @extend %heading-base;
+
+    font-size: $font-size-xl;
+    margin: $indent-base 0;
+    line-height: $line-height-l;
+}
+
+h4,
+%h4 {
+    @extend %heading-base;
+
+    font-weight: 600;
+    font-size: $font-size-xl;
+    margin: $indent-base 0;
+    line-height: $line-height-l;
+}
+
+h5,
+%h5 {
+    @extend %heading-base;
+
+    font-weight: 600;
+    font-size: 17px;
+    margin: $indent-base 0;
+    line-height: $line-height-l;
+}
+
+h6,
+%h6 {
+    @extend %heading-base;
+
+    font-weight: 600;
+    font-size: $font-size-l;
+    margin: $indent-base 0;
+    line-height: $line-height-l;
+}
+
+p,
+%paragraph {
+    color: $color-typography;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+
+    &.lead {
+        font-size: $font-size-l;
+        line-height: $line-height-l;
+    }
+
+    &.less {
+        font-size: $font-size-s;
+        line-height: $line-height-s;
+    }
+}
+
+blockquote {
+    color: $color-secondary-dark;
+    font-size: $font-size-l;
+    font-style: italic;
+    margin: $indent-base 0;
+    line-height: $line-height-l;
+    padding-left: $indent-xl;
+    position: relative;
+    
+    &::before {
+        background-color: $color-secondary-dark;
+        bottom: 0;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 10px;
+    }
+
+    footer {
+        font-size: $font-size-s;
+        margin-top: $indent-s;
+        line-height: $line-height-xs;
+    }
+}

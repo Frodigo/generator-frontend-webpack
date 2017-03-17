@@ -1,0 +1,49 @@
+body {
+    font-family: $font-family-base;
+    min-width: 320px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.ui-section {
+    margin: $indent-base 0;
+}
+
+a {
+    color: $color-primary;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.bg-dark {
+    background-color: $color-dark;
+}
+
+.bg-primary {
+    background-color: $color-primary;
+}
+
+.bg-secondary {
+    background-color: $color-secondary;
+}
+
+.bg-secondary-dark {
+    background-color: $color-secondary-dark;
+}
+
+.bg-alternative {
+    background-color: $color-alternative;
+}
+
+.bg-alternative-dark {
+    background-color: $color-alternative;
+}

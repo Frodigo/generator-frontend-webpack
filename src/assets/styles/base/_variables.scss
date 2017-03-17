@@ -1,0 +1,43 @@
+$font-family-base:              'Josefin Sans', sans-serif;
+
+$indent-xs:                     5px;
+$indent-s:                      10px;
+$indent-base:                   15px;
+$indent-l:                      20px;
+$indent-xl:                     30px;
+
+$font-size-s:                   12px;
+$font-size-base:                14px;
+$font-size-l:                   16px;
+$font-size-xl:                  18px;
+$font-size-xxl:                 20px;
+
+$line-height-xs:                14px;
+$line-height-s:                 16px;
+$line-height-base:              18px;
+$line-height-l:                 22px;
+
+
+$color-white:                   #fff;
+$color-dark:                    #303030;
+$color-primary:                 #E61FB6;
+$color-secondary:               #08E1DE;
+$color-secondary-dark:          #149493;
+$color-alternative:             #AE9518;
+$color-alternative-dark:        #947E0D;
+$color-typography:              $color-dark;
+
+$action-default-color:          $color-dark;
+$action-default-border-radius:  25px;
+$action-default-font-weight:    600;
+$action-default-hover-border:   $color-dark;
+$action-default-hover-color:    $color-dark;
+$action-default-hover-bg:       transparent;
+
+$action-primary-color:          $color-white;
+$action-primary-bg:             $color-primary;
+$action-primary-border:         $color-primary;
+
+$action-secondary-color:        $color-white;
+$action-secondary-bg:           $color-secondary;
+$action-secondary-border:       $color-secondary;

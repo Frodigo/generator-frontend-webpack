@@ -12,6 +12,7 @@ const config = {
     context: path.resolve(__dirname, 'src'),
     entry: {
         index: './index.js',
+        uikit: './uikit.js',
         contact: './contact.js'
     },
     output: {
@@ -43,7 +44,7 @@ const config = {
                 }]
             },
             {
-                test: /\.html$/,
+                test: /(^-partial)?\.html$/,
                 use: [
                     {
                         loader: 'file-loader',
@@ -52,7 +53,7 @@ const config = {
                         }
                     },
                     {
-                        loader: 'extract-loader',
+                        loader: 'extract-loader'
                     },
                     {
                         loader: 'html-loader',

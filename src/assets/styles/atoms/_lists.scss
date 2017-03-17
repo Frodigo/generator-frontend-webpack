@@ -1,0 +1,71 @@
+%list-unstyled {
+    li {
+        display: block;
+    }
+}
+
+%unordered-list {
+    li {
+        position: relative;
+        padding-left: $indent-base;
+
+        &::before {
+            background-color: $color-secondary-dark;
+            content: '';
+            display: inline-block;
+            height: 3px;
+            left: 0;
+            position: absolute;
+            top: 6px;
+            width: 3px;
+        }
+    }
+}
+
+%ordered-list {
+    counter-reset: olNum;
+
+    > li {
+        counter-increment: olNum;
+
+        &::before {
+            content: counter(olNum) ". ";
+            color: $color-secondary-dark;
+            display: inline-block;
+            width: 20px;
+        }
+    }
+}
+
+%list-inline {
+    li {
+        display: inline-block;
+    }
+}
+
+ul {
+    @extend %unordered-list;
+}
+
+ol {
+    @extend %ordered-list;  
+}
+
+ul,
+ol {
+    @extend %list-unstyled;
+
+    display: block;
+    margin: 0 0 $indent-s 0;
+    padding: 0;
+}
+
+.colors-list {
+    @extend %list-inline;
+
+    li {
+        height: 30px;
+        width: 30px;
+        margin: $indent-xs;
+    }
+}

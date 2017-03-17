@@ -1,4 +1,12 @@
-body {
-    background-color: white;
-    font-family: sans-serif;
-}
+@import 'vendor/burger';
+
+@import 'base/variables';
+@import 'base/base';
+
+@import 'atoms/typography';
+@import 'atoms/lists';
+@import 'atoms/buttons';
+
+@import 'molecues/logo';
+
+@import 'organisms/header';

@@ -1,0 +1,11 @@
+.page-header {
+    border-bottom: 1px solid $color-primary;
+    padding-top: $indent-s;
+    padding-bottom: $indent-s;
+
+    > .container {
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+    }
+}
