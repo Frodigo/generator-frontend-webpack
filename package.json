@@ -7,7 +7,8 @@
     "start": "webpack-dev-server --inline --content-base dist/",
     "eslint": "./node_modules/.bin/eslint src/*.js",
     "accessibility": "node ./dev/accessibility-validation.js",
-    "test": "npm run build && karma start && npm run eslint && npm run accessibility",
+    "htmllint": "node ./dev/html-validator.js",
+    "test": "npm run build && karma start && npm run eslint && npm run accessibility && npm run htmllint",
     "build": "rm -rf dist/ && webpack -p"
   },
   "keywords": [
@@ -29,7 +30,9 @@
     "extract-loader": "^0.1.0",
     "extract-text-webpack-plugin": "^2.0.0-beta.4",
     "file-loader": "^0.10.1",
+    "filehound": "^1.16.0",
     "html-loader": "^0.4.5",
+    "html-validator": "^2.2.0",
     "jasmine-core": "^2.5.2",
     "karma": "^1.5.0",
     "karma-jasmine": "^1.1.0",
