@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const extractCSS = new ExtractTextPlugin('assets/styles/[name].bundle.css');
+const postCSSOptions  = require('./postcss.config.js');
 
 const extractCommons = new webpack.optimize.CommonsChunkPlugin({
     name: 'commons',
@@ -35,8 +36,20 @@ const config = {
             },
             {
                 test: /\.scss$/,
-                loader: extractCSS.extract(['css-loader','sass-loader'])
+                loader: extractCSS.extract([
+                    {
+                        loader: 'css-loader'
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: postCSSOptions
+                    },
+                    {
+                        loader: 'sass-loader'
+                    }
+                ])
             },
+
             {
                 test: /\.(png|jpg)$/,
                 use: [{
