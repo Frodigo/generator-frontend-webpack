@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --inline --content-base dist/",
-    "test": "karma start && ./node_modules/.bin/eslint src/*.js",
+    "eslint": "./node_modules/.bin/eslint src/*.js",
+    "accessibility": "node ./dev/accessibility-validation.js",
+    "test": "npm run build && karma start && npm run eslint && npm run accessibility",
     "build": "rm -rf dist/ && webpack -p"
   },
   "keywords": [
@@ -15,6 +17,7 @@
   "author": "Marcin Kwiatkowski",
   "license": "ISC",
   "devDependencies": {
+    "access-sniff": "^3.0.1",
     "autoprefixer": "^6.7.7",
     "babel-core": "^6.23.1",
     "babel-eslint": "^7.1.1",
