@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --inline --content-base dist/",
-    "test": "npm test",
+    "test": "karma start",
     "build": "rm -rf dist/ && webpack -p"
   },
   "keywords": [
@@ -23,6 +23,12 @@
     "extract-text-webpack-plugin": "^2.0.0-beta.4",
     "file-loader": "^0.10.1",
     "html-loader": "^0.4.5",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.5.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^2.0.3",
     "node-sass": "^4.5.0",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.13.2",
