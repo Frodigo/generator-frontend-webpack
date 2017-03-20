@@ -1,6 +1,6 @@
 {
-  "name": "generator-frontend-webpack",
-  "version": "0.1.0",
+  "name": "generator-front-webpack",
+  "version": "0.1.1",
   "description": "Generator for modern front end apps",
   "license": "MIT",
   "files": [
