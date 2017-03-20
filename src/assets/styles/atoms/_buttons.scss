@@ -6,7 +6,7 @@
     font-weight: $action-default-font-weight;
     padding: $indent-base $indent-xl;
     text-decoration: none;
-    transition: all .3s;
+    transition: all 0.3s;
 
     &.primary {
         border-color: $action-primary-border;
