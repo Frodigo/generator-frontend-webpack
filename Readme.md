@@ -1,18 +1,14 @@
 # Generator-frontend-webpack
 
-### work in progress
 
-## Things to do (Trello board):
-https://trello.com/b/pd5wf7k1/generator-frontend-webpack
+## How to use
 
-## How to run
-
-1. Clone this repository `$ git clone https://github.com/Frodigo/generator-frontend-webpack.git`
-2. `$ cd generator-frontend-webpack`
-3. Install dependencies: `$ npm install`
-4. Run dev server: `$ npm start`
-5. Open `http://localhost:8080/` to see compiled app :)
-6. If you want to build files without dev server run command `$ npm run build`
+1. Install generator globally `$ npm install -g generator-front-webpack`
+2. initiate the generator: `$ yo front-webpack`'
+3. Run dev server: `$ npm start`
+4. Open `http://localhost:8080/` to see compiled app.
+5. If you want to build files without dev server run command `$ npm run build`
+6. If you want test your app enter `$npm test`
 
 ## How to contribute
 
