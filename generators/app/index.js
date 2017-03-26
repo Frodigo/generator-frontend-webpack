@@ -16,14 +16,6 @@ module.exports = class extends Generator {
 
     }
 
-    // writing() {
-    //     this.fs.copyTpl(
-    //         this.templatePath('_package.json'),
-    //         this.destinationPath('package.json'),
-    //         { title: 'Templating with Yeoman' }
-    //     );
-    // }
-
     writing () {
         // Have Yeoman greet the user.
         this.log(yosay(
