@@ -16,16 +16,15 @@
 
 ## Installation
 ```bash
-# Make sure both is installed globally
+# Make sure  is installed globally
 npm install -g yo
 npm install -g generator-front-webpack
+npm install -g karma-cli
 ```
 
 ## Setting up projects
 ```bash
 # Create a new directory, and `cd` into it:
-mkdir new-project && cd new-project
-
 mkdir new-project && cd new-project
 ```
 
