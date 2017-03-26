@@ -1,17 +1,75 @@
-# Generator-frontend-webpack
+# Generator-front-webpack
 
+> Yeoman generator for frontend apps - lets you quickly set up a project
+ including dev server, unit tests and [Webpack](http://webpack.github.io/) module system.
 
-## How to use
+## Features
 
-1. Install generator globally `$ npm install -g generator-front-webpack`
-2. initiate the generator: `$ yo front-webpack`'
-3. Run dev server: `$ npm start`
-4. Open `http://localhost:8080/` to see compiled app.
-5. If you want to build files without dev server run command `$ npm run build`
-6. If you want test your app enter `$npm test`
+- Transpiling ES2015 to ES5 via Babel-Loader
+- Compiling SCSS/SASS to CSS
+- Autoprefixing styles via PostCSS
+- Automatic JavaScript code linting via esLint
+- Automatic Sass code linting via sasslint
+- HTML linting via html-validator
+- Web accessibility linting via AccessSniff
+- Ability to unit test JavaScript code via Karma and Jasmine
 
-## How to contribute
+## Installation
+```bash
+# Make sure both is installed globally
+npm install -g yo
+npm install -g generator-front-webpack
+```
 
-If you want contribute this project please select a issue from TO DO
-column on Trello Board, create fork of this repository. At the end please
-create pull request with your changes.
+## Setting up projects
+```bash
+# Create a new directory, and `cd` into it:
+mkdir new-project && cd new-project
+
+mkdir new-project && cd new-project
+```
+
+### Commands
+
+#### Dev server
+
+Run dev server: `$ npm start`
+Open `http://localhost:8080/` to see compiled app.
+
+#### Build app
+
+If you want to build files without dev server run command `$ npm run build`
+
+#### Test app
+
+If you want test your app enter `$npm test`
+
+This command including:
+
+- unit testing
+- js linting
+- sass linting
+- html validation
+- web accessibility linting
+
+If you want run only one kind of a test you can use one of these commands:
+
+##### Unit testing
+
+`$ karma start`
+
+##### JavaScript linting
+
+`$ npm start eslint`
+
+##### SASS linting
+
+`$ npm run sasslint`
+
+##### HTML validation
+
+`$ npm run htmllint`
+
+##### Web accessibility linting
+
+`$ npm start accessibility`
