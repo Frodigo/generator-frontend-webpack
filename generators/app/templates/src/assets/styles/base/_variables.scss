@@ -1,43 +1,117 @@
-$font-family-base:              'Josefin Sans', sans-serif;
+/// Project variables
+/// @author Marcin Kwiatkowski <contact@frodigo.com>
+/// @group variables
 
-$indent-xs:                     5px;
-$indent-s:                      10px;
-$indent-base:                   15px;
-$indent-l:                      20px;
-$indent-xl:                     30px;
+/// @prop {string} $font-family-base ['Josefin Sans', sans-serif] - base font family
+$font-family-base:              'Josefin Sans', sans-serif !default;
 
-$font-size-s:                   12px;
-$font-size-base:                14px;
-$font-size-l:                   16px;
-$font-size-xl:                  18px;
-$font-size-xxl:                 20px;
+/// @prop {string} $index-xs [5px] - extra small indent
+$indent-xs:                     5px !default;
 
-$line-height-xs:                14px;
-$line-height-s:                 16px;
-$line-height-base:              18px;
-$line-height-l:                 22px;
+/// @prop {string} $index-s [10px] - small indent
+$indent-s:                      10px !default;
 
+/// @prop {string} $index-base [15px] - base indent
+$indent-base:                   15px !default;
 
-$color-white:                   #fff;
-$color-dark:                    #303030;
-$color-primary:                 #E61FB6;
-$color-secondary:               #08E1DE;
-$color-secondary-dark:          #149493;
-$color-alternative:             #AE9518;
-$color-alternative-dark:        #947E0D;
-$color-typography:              $color-dark;
+/// @prop {string} $index-l [20px] - large indent
+$indent-l:                      20px !default;
 
-$action-default-color:          $color-dark;
-$action-default-border-radius:  25px;
-$action-default-font-weight:    600;
-$action-default-hover-border:   $color-dark;
-$action-default-hover-color:    $color-dark;
-$action-default-hover-bg:       transparent;
+/// @prop {string} $index-xl [30px] - extra large indent
+$indent-xl:                     30px !default;
 
-$action-primary-color:          $color-white;
-$action-primary-bg:             $color-primary;
-$action-primary-border:         $color-primary;
+/// @prop {string} $font-size-xs [10px] - extra small font size
+$font-size-xs:                   10px !default;
 
-$action-secondary-color:        $color-white;
-$action-secondary-bg:           $color-secondary;
-$action-secondary-border:       $color-secondary;
+/// @prop {string} $font-size-s [12px] - small font size
+$font-size-s:                   12px !default;
+
+/// @prop {string} $font-size-base [14px] - base font size
+$font-size-base:                14px !default;
+
+/// @prop {string} $font-size-l [16px] - large font size
+$font-size-l:                   16px !default;
+
+/// @prop {string} $font-size-xl [18px] - extra large font size
+$font-size-xl:                  18px !default;
+
+/// @prop {string} $font-size-xxl [20px] - xxl font size
+$font-size-xxl:                 20px !default;
+
+/// @prop {string} $line-height-xs [10px] - extra small line-height
+$line-height-xs:                10px !default;
+
+/// @prop {string} $line-height-s [12px] - small line-height
+$line-height-s:                 12px !default;
+
+/// @prop {string} $line-height-base [14px] - base line-height
+$line-height-base:              14px !default;
+
+/// @prop {string} $line-height-l [16px] - large line-height
+$line-height-l:                 16px !default;
+
+/// @prop {string} $line-height-xl [18px] - extra large line-height
+$line-height-xl:                18px !default;
+
+/// @prop {string} $line-height-xxl [20px] - xxl line-height
+$line-height-xxl:               20px !default;
+
+/// @prop {string} $color-white [#fff] - white color
+$color-white:                   #fff !default;
+
+/// @prop {string} $color-dark [#303030] - dark color
+$color-dark:                    #303030 !default;
+
+/// @prop {string} $color-primary [#E61FB6] - primary color
+$color-primary:                 #E61FB6 !default;
+
+/// @prop {string} $color-secondary [#08E1DE] - secondary color
+$color-secondary:               #08E1DE !default;
+
+/// @prop {string} $color-secondary-dark [#149493] - secondary dark color
+$color-secondary-dark:          #149493 !default;
+
+/// @prop {string} $color-alternative [#AE9518] - alternative color
+$color-alternative:             #AE9518 !default;
+
+/// @prop {string} $color-alternative-dark [#947E0D] - alternative dark color
+$color-alternative-dark:        #947E0D !default;
+
+/// @prop {string} $color-typography [$color-dark] - default typography color
+$color-typography:              $color-dark !default;
+
+/// @prop {string} $action-default-color [$color-dark] - default action font color
+$action-default-color:          $color-dark !default;
+
+/// @prop {string} $action-default-border-radius [25px] - default action border radius
+$action-default-border-radius:  25px !default;
+
+/// @prop {number} $action-default-font-weight [600] - default action font weight
+$action-default-font-weight:    600 !default;
+
+/// @prop {string} $action-default-hover-border [$color-dark] - default action border color on hover
+$action-default-hover-border:   $color-dark !default;
+
+/// @prop {string} $action-default-hover-color [$color-dark] - default action font color on hover
+$action-default-hover-color:    $color-dark !default;
+
+/// @prop {string} $action-default-hover-bg [transparent] - default action background color on hover
+$action-default-hover-bg:       transparent !default;
+
+/// @prop {string} $action-primary-color [$color-white] - primary action font color
+$action-primary-color:          $color-white !default;
+
+/// @prop {string} $action-primary-bg [$color-primary] - primary action background color
+$action-primary-bg:             $color-primary !default;
+
+/// @prop {string} $action-primary-border [$action-primary-border] - primary action border color
+$action-primary-border:         $color-primary !default;
+
+/// @prop {string} $action-secondary-color [$color-white] - secondary action font color
+$action-secondary-color:        $color-white !default;
+
+/// @prop {string} $action-secondary-bg [$color-secondary] - secondary action background color
+$action-secondary-bg:           $color-secondary !default;
+
+/// @prop {string} $action-secondary-border [$color-secondary] - secondary action border color
+$action-secondary-border:       $color-secondary !default;

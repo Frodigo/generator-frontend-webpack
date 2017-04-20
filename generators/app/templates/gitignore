@@ -3,3 +3,4 @@ dist/
 .idea/
 dev/reports/
 npm-debug.log
+docs/sass

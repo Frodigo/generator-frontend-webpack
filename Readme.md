@@ -13,6 +13,7 @@
 - HTML linting via html-validator
 - Web accessibility linting via AccessSniff
 - Ability to unit test JavaScript code via Karma and Jasmine
+- Automatic generation of sass documentation via sassdoc
 
 ## Installation
 ```bash
@@ -75,3 +76,11 @@ If you want run only one kind of a test you can use one of these commands:
 ##### Web accessibility linting
 
 `$ npm start accessibility`
+
+#### Creating sass documentation
+
+`$ npm run sassdoc`
+
+#### Open server to preview documentation
+
+`$ npm run docsserver`

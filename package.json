@@ -1,6 +1,6 @@
 {
   "name": "generator-front-webpack",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Generator for modern front end apps",
   "license": "MIT",
   "files": [
@@ -16,7 +16,8 @@
     "es2015",
     "webpack",
     "karma",
-    "jasmime"
+    "jasmime",
+    "sassdoc"
   ],
   "repository": {
     "type": "git",
